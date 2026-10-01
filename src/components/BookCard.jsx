@@ -12,7 +12,7 @@ function BookCard({ title, author, status, rating = 0, tags = [] }) {
     </p>
   );
 
-  const tagList = tags.length && (
+  const tagList = tags.length > 0 && (
     <ul className="card-tags">
       {tags.map((tag) => (
         <li key={tag} className="tag">

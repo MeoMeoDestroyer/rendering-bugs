@@ -60,7 +60,7 @@ function App() {
       <Header owner="Josh" bookCount={BOOKS.length} />
 
       <Panel title="Starting next">
-        <BookCard status="reading" {...next} />
+        <BookCard {...next} status="reading" />      
       </Panel>
 
       <Panel title="Currently reading">

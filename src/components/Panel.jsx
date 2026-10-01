@@ -1,6 +1,5 @@
 function Panel({ title, children }) {
-  const isEmpty = !children;
-
+  const isEmpty = !children || (Array.isArray(children) && children.length === 0);
   if (isEmpty) {
     return (
       <section className="panel">

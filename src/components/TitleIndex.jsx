@@ -3,7 +3,7 @@ function byTitle(a, b) {
 }
 
 function TitleIndex({ books }) {
-  const sorted = books.sort(byTitle);
+  const sorted = [...books].sort(byTitle);
 
   return (
     <ul className="title-list">
